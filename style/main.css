@@ -1,0 +1,243 @@
+:root{
+    --vermelho:#e50914;
+    --preta:#141414;
+    --cinza:#e5e5e5;
+    --cinza_escuro:#b2b4b4 ;
+    --outro_cinza:#808080;
+}
+@font-face {
+    font-family: "netflix sans";
+    src: url(/midia/NetflixSansRegular.woff);
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ELEMENTOS DE BASE*/
+
+body{
+   background-color: var(--preta);
+   font-family: "netflix sans",'Times New Roman', Times, serif;
+   color: #ffffff;
+}
+
+header{
+    z-index: 1000;
+    position:fixed;
+    width: 100%;
+    background-image : linear-gradient(to bottom,rgb(0, 0, 0, 60%),rgb(0, 0, 0, 30%), rgba(255,0,0,0));
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    transition: .5s linear all;
+}
+header.scrolled {
+    background-color: var(--preta) !important;
+    transition: background-color .5s linear;
+  }
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+.profile img{
+    height: 30px;
+    border: 50px;
+}
+.profile i{
+    margin-right: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+header .container{
+        display: flex;
+        align-items: center;
+        justify-content:left;
+       
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: arial black;
+    font-size: 10px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 40px;
+    height: 28px;
+   
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 20px;
+    font-size: 14px;
+    transition: .5s ease all;
+}
+header a:hover{
+    color: var(--cinza_escuro);
+}
+
+/* JOGO PRINCIPAL */
+
+.jogo_principal{
+    font-size: 17.5px;
+    background-image: url(/midia/Mario3baner.jpg);
+    background-image: linear-gradient(to bottom, transparent 90%, #141414 100%), url(/midia/Mario3baner.jpg);
+    background-position: center;
+	background-size: cover;
+    height: 650px;
+    width: 100%;
+    background-size:cover;
+    position: absolute;
+    top:0;
+    z-index:-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.logo_principal{
+    height: 150px;
+    margin-bottom: 15px;
+}
+.jogo_principal .descricao{
+    text-align: left;
+    margin-bottom: 14.2px;
+    font-weight: 550;
+    width: 50%;
+
+}
+.jogo_principal a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: transparent;
+}
+.butao{
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 1.5s ease all;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.butao:nth-child(1){
+    margin-right: 5px;
+    background-color: white;
+    color: black;
+}
+
+.butao:nth-child(2){
+    background-color: rgba(109,109,110,0.7);
+    color: white;
+}
+.butao:nth-child(1):hover{
+    margin-right: 5px;
+    background-color: rgba(197, 194, 194, 0.7);
+    color: black;
+}
+
+.butao:nth-child(2):hover{
+    background-color: rgba(109, 109, 110, 0.3);
+    color: white;
+}
+.butao i{
+    margin-right: 10px;
+}
+.classificacao{
+    border: solid 3px #dcdcdc;
+    border-style: none none none solid;
+    background-color: rgba(51,51,51,.6);
+    font-size: 1.1vw;
+    padding: 1px 3.5vw 1px .8vw;
+    position: absolute;
+    right: 0;
+    bottom: 23%;
+    display: flex;
+    justify-content: center;
+}
+.classificacao img{
+    width: 28px;
+
+}
+.container{
+    margin-left: 40px;
+    
+}
+.box_jogo{
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+.categoria{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 17.6;
+    font-weight: 800;
+    cursor: pointer;
+}
+.carrosel{
+    position:inherit;
+    justify-content: center;
+    position: relative;
+    top: 560px;
+}
+.carrosel a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: transparent;
+    cursor: pointer;
+}
+.owl-prev {
+    width: 20px;
+    height: 326.39px;
+    position: absolute;
+    top: -1.5%;
+    display: block !important;
+    border:0px solid black;
+    background-image: linear-gradient(to right, #141414 100%,transparent 90%,)
+}
+
+.owl-next {
+    width: 20px;
+    height: 326.39px;
+    position: absolute;
+    top: -1.5%;
+    right: 0px;
+    display: block !important;
+    border:0px solid black;
+    background-image: linear-gradient(to right, #141414 100%,transparent 90%,)
+}
+.contatos{
+    color: var(--outro_cinza);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    text-align: center;
+    top: 140%;
+    left: 35%;
+   
+}
+.contatos p:nth-child(2){
+    font-size: 14px;
+
+}
+.contatos i{
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.contatos a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: var(--outro_cinza);
+    cursor: pointer;
+}
