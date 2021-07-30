@@ -1,9 +1,9 @@
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        document.getElementById("logo").src="/midia/RetroflixIcon.png";
+        document.getElementById("logo").src="midia/RetroflixIcon.png";
 
     } else {
-        document.getElementById("logo").src="/midia/RetroflixLogo.png";
+        document.getElementById("logo").src="midia/RetroflixLogo.png";
 
     }
   }
