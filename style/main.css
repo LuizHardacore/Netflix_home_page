@@ -84,7 +84,7 @@ header a:hover{
 .jogo_principal{
     font-size: 17.5px;
     background-image: url(midia/Mario3baner.jpg);
-    background-image: linear-gradient(to bottom, transparent 90%, #141414 100%), url(/midia/Mario3baner.jpg);
+    background-image: linear-gradient(to bottom, transparent 90%, #141414 100%), url(midia/Mario3baner.jpg);
     background-position: center;
 	background-size: cover;
     height: 650px;
